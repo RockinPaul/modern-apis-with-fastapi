@@ -1,7 +1,6 @@
 import datetime
 from typing import List, Optional
 
-from dateutil.parser import parse
 from pydantic import BaseModel
 
 order_json = {
@@ -22,8 +21,7 @@ class Order(BaseModel):
 o = Order(**order_json)
 print(o)
 
-
 # Default for JSON post
 # Can be done for others with mods.
-def order_api(order: Order):
-    pass
+# def order_api(order: Order):
+#     pass
